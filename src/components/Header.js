@@ -6,6 +6,8 @@ import $ from 'jquery'
 import LogoTelegram from '../assets/images/logo-telegram.svg'
 import LogoTwitter from '../assets/images/logo-twitter.svg'
 import LogoFacebook from '../assets/images/logo-facebook.svg'
+import LogoBitcoinTalk from '../assets/images/logo-bitcointalk.svg'
+import LogoGithub from '../assets/images/logo-github.svg'
 import Linkedin from '../assets/images/linkedin-logo.svg'
 
 class Header extends Component {
@@ -58,20 +60,26 @@ class Header extends Component {
     renderContact() {
         return (
             <div className="contact">
-                <a href="https://t.me/empowofficial" target="_blank"  rel="noopener noreferrer">
+                <a href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">
                     <img src={LogoTelegram} alt="photos"></img>
                 </a>
-                <a href="https://twitter.com/Empowofficial" target="_blank"  rel="noopener noreferrer">
+                <a href="https://twitter.com/Empowofficial" target="_blank" rel="noopener noreferrer">
                     <img src={LogoTwitter} alt="photos"></img>
                 </a>
-                <a href="https://www.facebook.com/pg/Empowofficial" target="_blank"  rel="noopener noreferrer">
+                <a href="https://www.facebook.com/pg/Empowofficial" target="_blank" rel="noopener noreferrer">
                     <img src={LogoFacebook} alt="photos"></img>
                 </a>
-                <a href="http://linkedin.com/company/empow-io" target="_blank"  rel="noopener noreferrer">
-                    <img style={{width: '12px', height: '12px'}} src={Linkedin} alt="photos"></img>
+                <a href="http://linkedin.com/company/empow-io" target="_blank" rel="noopener noreferrer">
+                    <img style={{ width: '12px', height: '12px' }} src={Linkedin} alt="photos"></img>
                 </a>
-                <a href="https://medium.com/@business_44456" target="_blank"  rel="noopener noreferrer">
+                <a href="https://medium.com/@business_44456" target="_blank" rel="noopener noreferrer">
                     <span>M</span>
+                </a>
+                <a href="https://bitcointalk.org/index.php?topic=5180095.msg52308339#msg52308339" target="_blank" rel="noopener noreferrer">
+                    <img style={{ width: '12px', height: '12px' }} src={LogoBitcoinTalk} alt="photos"></img>
+                </a>
+                <a href="https://github.com/empow-blockchain?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img style={{ width: '12px', height: '12px' }} src={LogoGithub} alt="photos"></img>
                 </a>
             </div>
         )

@@ -8,53 +8,53 @@ class RoadmapController extends Component {
             currenIndex: 3,
             data: {
                 "2018": {
-                    q1 : {
+                    q1: {
                         value: 'Forming ideas, researching market and completing the Whitepaper.',
                         type: 'up'
                     },
-                    q3 : {
+                    q3: {
                         value: 'Developing core team',
                         type: 'down'
                     }
                 },
                 "2019": {
-                    q2 : {
+                    q2: {
                         value: 'Building the Empow ecosystem',
                         type: 'down'
                     },
-                    q3 : {
+                    q3: {
                         value: 'Testing the platform, releasing the Empow wallet. Releasing EmScan',
                         type: 'up'
                     },
-                    q4 : {
+                    q4: {
                         value: 'Building a partner-team, building a advisor-team. Updating Empow wallet and Emscan.',
                         type: 'down'
                     }
                 },
                 "2020": {
-                    q2 : {
+                    q2: {
                         value: 'Selling PreSale Empow tokens. Listing on the exchanges.',
                         type: 'up'
                     },
-                    q3 : {
+                    q3: {
                         value: 'Launching Blockchain Empow Testnet and building Api system.',
                         type: 'down'
                     },
-                    q4 : {
+                    q4: {
                         value: 'Launching Blockchain Empow mainnet and launching Empo social network',
                         type: 'up'
                     }
                 },
                 "2021": {
-                    q1 : {
+                    q1: {
                         value: 'officially releasing Token sale.',
                         type: 'down'
                     },
-                    q2 : {
+                    q2: {
                         value: 'Releasing EmAds ad auction platform',
                         type: 'up'
                     },
-                    q3 : {
+                    q3: {
                         value: 'Issuing Empay payment platform\nContinuing to expand the ecosystem and support the community. Researching new features and new trends of the market.',
                         type: 'down'
                     }
@@ -97,29 +97,29 @@ class RoadmapController extends Component {
                 currenIndex: index
             })
         }, 700);
-      
+
     }
 
     renderYear(index) {
-        
+
         var year = index === 1 ? 2018 : index === 2 ? 2019 : index === 3 ? 2020 : 2021
         var data = this.state.data[`${year}`];
         return (
             <div>
                 <div className="waper-down">
-                   <div className={`conten-down q1 ${data.q1 && data.q1.type  === 'down' ? 'active' : ''}`}>
+                    <div className={`conten-down q1 ${data.q1 && data.q1.type === 'down' ? 'active' : ''}`}>
                         <p>The  1<sup>st</sup> quarter of {year}</p>
                         <p>{data.q1 ? data.q1.value : ''}</p>
                     </div>
-                   <div className={`conten-down q2 ${data.q2 && data.q2.type  === 'down' ? 'active' : ''}`}>
+                    <div className={`conten-down q2 ${data.q2 && data.q2.type === 'down' ? 'active' : ''}`}>
                         <p>The 2<sup>nd</sup> quarter of {year}</p>
                         <p>{data.q2 ? data.q2.value : ''}</p>
                     </div>
-                    <div className={`conten-down q3 ${data.q3 && data.q3.type  === 'down' ? 'active' : ''}`}>
+                    <div className={`conten-down q3 ${data.q3 && data.q3.type === 'down' ? 'active' : ''}`}>
                         <p>The 3<sup>rd</sup> quarter of {year}</p>
                         <p>{data.q3 ? data.q3.value : ''}</p>
                     </div>
-                    <div className={`conten-down q4 ${data.q4 && data.q4.type  === 'down' ? 'active' : ''}`}>
+                    <div className={`conten-down q4 ${data.q4 && data.q4.type === 'down' ? 'active' : ''}`}>
                         <p>The 4<sup>th</sup> quarter of {year}</p>
                         <p>{data.q4 ? data.q4.value : ''}</p>
                     </div>
@@ -138,19 +138,19 @@ class RoadmapController extends Component {
                 </div>
 
                 <div className="waper-up">
-                   <div className={`conten-up q1 ${data.q1 && data.q1.type  === 'up' ? 'active' : ''}`}>
+                    <div className={`conten-up q1 ${data.q1 && data.q1.type === 'up' ? 'active' : ''}`}>
                         <p>The  1<sup>st</sup> quarter of {year}</p>
                         <p>{data.q1 ? data.q1.value : ''}</p>
                     </div>
-                   <div className={`conten-up q2 ${data.q2 && data.q2.type  === 'up' ? 'active' : ''}`}>
+                    <div className={`conten-up q2 ${data.q2 && data.q2.type === 'up' ? 'active' : ''}`}>
                         <p>The 2<sup>nd</sup> quarter of {year}</p>
                         <p>{data.q2 ? data.q2.value : ''}</p>
                     </div>
-                    <div className={`conten-up q3 ${data.q3 && data.q3.type  === 'up' ? 'active' : ''}`}>
+                    <div className={`conten-up q3 ${data.q3 && data.q3.type === 'up' ? 'active' : ''}`}>
                         <p>The 3<sup>rd</sup> quarter of {year}</p>
                         <p>{data.q3 ? data.q3.value : ''}</p>
                     </div>
-                    <div className={`conten-up q4 ${data.q4 && data.q4.type  === 'up' ? 'active' : ''}`}>
+                    <div className={`conten-up q4 ${data.q4 && data.q4.type === 'up' ? 'active' : ''}`}>
                         <p>The 4<sup>th</sup> quarter of {year}</p>
                         <p>{data.q4 ? data.q4.value : ''}</p>
                     </div>
@@ -194,128 +194,76 @@ class RoadmapController extends Component {
     }
 
     renderMobile() {
+
+        const { data } = this.state
+
         return (
             <div className="year-wrapper" onScroll={this.onScrollMobile}>
                 <div className="year-fullheight">
-                    <div className="one-year">
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Q1 - 2017</p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                    {Object.keys(data).map((key) => {
+                        return (
+                            <div className="one-year">
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                                {Array.from(Array(4), (e, index) => {
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-                    </div>
+                                    return (
+                                        <div className="one-quarter">
+                                            <div className="line"></div>
+                                            <div className="circle"></div>
+                                            { data[key].hasOwnProperty(`q${index+1}`) && <p>{`Q${index+1} - ${key} : ${data[key][`q${index+1}`].value}`}</p> }
+                                            <div style={{ clear: 'both' }}></div>
+                                        </div>
+                                    )
+                                })
+                                }
+                            </div>
+                        )
 
-                    <div className="one-year">
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Q1- 2018 : Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                        // for(let i = 1; i <= 4; i++) {
+                        //     if(data[key].)
+                        // }
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                        // return (
+                        // <div className="one-quarter">
+                        //     <div className="line"></div>
+                        //     <div className="circle"></div>
+                        //     <p>Q1 - 2017</p>
+                        //     <div style={{ clear: 'both' }}></div>
+                        // </div>
+                        // )
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                        // <div className="one-year">
+                        //     <div className="one-quarter">
+                        //         <div className="line"></div>
+                        //         <div className="circle"></div>
+                        //         <p>Q1 - 2017</p>
+                        //         <div style={{ clear: 'both' }}></div>
+                        //     </div>
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-                    </div>
+                        //     <div className="one-quarter">
+                        //         <div className="line"></div>
+                        //         <div className="circle"></div>
+                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
+                        //         <div style={{ clear: 'both' }}></div>
+                        //     </div>
 
-                    <div className="one-year">
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Q1 - 2019 Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                        //     <div className="one-quarter">
+                        //         <div className="line"></div>
+                        //         <div className="circle"></div>
+                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
+                        //         <div style={{ clear: 'both' }}></div>
+                        //     </div>
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
+                        //     <div className="one-quarter">
+                        //         <div className="line"></div>
+                        //         <div className="circle"></div>
+                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
+                        //         <div style={{ clear: 'both' }}></div>
+                        //     </div>
+                        // </div>
+                    })}
 
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-                    </div>
-
-                    <div className="one-year">
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Q1 - 2020 Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-
-                        <div className="one-quarter">
-                            <div className="line"></div>
-                            <div className="circle"></div>
-                            <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                            <div style={{ clear: 'both' }}></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         )

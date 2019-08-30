@@ -1,10 +1,12 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Phone from '../assets/images/phone.svg'
 import Location from '../assets/images/location.svg'
 import LogoFacebook from '../assets/images/logo-facebook.svg'
 import LogoTwitter from '../assets/images/logo-twitter.svg'
 import LogoTelegram from '../assets/images/logo-telegram.svg'
 import Linkedin from '../assets/images/linkedin-logo.svg'
+import LogoBitcoinTalk from '../assets/images/logo-bitcointalk.svg'
+import LogoGithub from '../assets/images/logo-github.svg'
 
 class FooderController extends Component {
 
@@ -14,23 +16,29 @@ class FooderController extends Component {
                 <div className="container">
                     <div className="waper">
                         <div className="group">
-                            <p style={{fontSize: '32px', fontWeight: 'bold'}}>EMPOW</p>
+                            <p style={{ fontSize: '32px', fontWeight: 'bold' }}>EMPOW</p>
                             <p style={{ width: '350px' }}>Empow is a chain of decentralized products and services, built on Blockchain technology. With superior features and utilities, it helps to overcome the existing limitations of the previous generation's Blockchain and makes all transactions safe, transparent, secure, with friendly interface and easy to use.</p>
                             <div className="waper-logo">
-                                <a className="logo" href="https://www.facebook.com/pg/Empowofficial" target="_blank"  rel="noopener noreferrer">
+                                <a className="logo" href="https://www.facebook.com/pg/Empowofficial" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoFacebook} alt="photos"></img>
                                 </a>
-                                <a className="logo" href="https://twitter.com/Empowofficial" target="_blank"  rel="noopener noreferrer">
+                                <a className="logo" href="https://twitter.com/Empowofficial" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoTwitter} alt="photos"></img>
                                 </a>
-                                <a className="logo"  href="http://linkedin.com/company/empow-io" target="_blank"  rel="noopener noreferrer">
-                                    <img style={{width: '12px', height: '12px'}} src={Linkedin} alt="photos"></img>
+                                <a className="logo" href="http://linkedin.com/company/empow-io" target="_blank" rel="noopener noreferrer">
+                                    <img style={{ width: '12px', height: '12px' }} src={Linkedin} alt="photos"></img>
                                 </a>
                                 <a className="logo" href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoTelegram} alt="photos"></img>
                                 </a>
                                 <a className="logo" href="https://medium.com/@business_44456" target="_blank" rel="noopener noreferrer">
                                     <p>M</p>
+                                </a>
+                                <a className="logo" href="https://bitcointalk.org/index.php?topic=5180095.msg52308339#msg52308339" target="_blank" rel="noopener noreferrer">
+                                    <img style={{ width: '12px', height: '12px' }} src={LogoBitcoinTalk} alt="photos"></img>
+                                </a>
+                                <a className="logo" href="https://github.com/empow-blockchain?tab=repositories" target="_blank" rel="noopener noreferrer">
+                                    <img style={{ width: '12px', height: '12px' }} src={LogoGithub} alt="photos"></img>
                                 </a>
                             </div>
                         </div>
@@ -59,12 +67,12 @@ class FooderController extends Component {
                             </div>
                         </div>
                     </div>
-                    <p style={{textAlign:'center', marginTop:  '100px', marginBottom: '20px'}}>© 2019 all rights reserved</p>
+                    <p style={{ textAlign: 'center', marginTop: '100px', marginBottom: '20px' }}>© 2019 all rights reserved</p>
                 </div>
             </div>
         )
     }
-  
+
 }
 
 export default FooderController

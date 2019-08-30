@@ -1330,7 +1330,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 			opacity: 1;
 			height: auto;
 			transform: translateY(0px);
-			padding-bottom: 20px;
+			padding-bottom: 0px;
 			.tex1 {
 				font-size: 14px;
 		   }
@@ -1354,10 +1354,15 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 			.group {
 				width: 100%;
 				.waper-logo {
-					margin-top: -290px;
-					float: right;
+					justify-content: space-between;
 					.logo {
 						background: #ff6a7e;
+						&:last-child {
+							margin-right: 0px;
+						}
+				   }
+				   p {
+						margin: 0px !important;
 				   }
 			   }
 		   }
@@ -1365,10 +1370,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 		p {
 			margin-top: 15px !important;
 			margin-bottom: 60px;
-	   }
-
-	   .waper-logo p {
-		   margin: 0px !important;;
 	   }
    }
 
