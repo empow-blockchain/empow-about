@@ -79,7 +79,7 @@ class FaqController extends Component {
                 <Header color="#361977"></Header>
                 <div className="container">
                     <div className="left">
-                        <h2 className="title">Install Empow Wallet now to use our Dapps</h2>
+                        <h2 className="title">Install Empow Wallet now to mine EM token free</h2>
                         <p className="description">Now it's much easy to connect faster than ever</p>
                         <a href="https://chrome.google.com/webstore/detail/empow-wallet/nlgnepoeokdfodgjkjiblkadkjbdfmgd" target="_blank" rel="noopener noreferrer" className="download">Download Now</a>
                     </div>
