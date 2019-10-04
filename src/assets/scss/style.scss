@@ -980,50 +980,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 #terms-of-service {
 	background-image: url("../images/bg-terms-of-service.svg");
 	background-size: cover;
-
+	.title, .content {
+		font-size: 16px;
+		font-weight: normal;
+	}
 	.waper {
 		margin-top: 100px;
-		display: flex;
-		.left {
-			margin-right: 200px;
-			li {
-				cursor: pointer;
-				padding: 5px 20px;
-				margin-bottom: 20px;
-			}
-			.active {
-				padding: 5px 20px;
-				border-radius: 2px;
-				background-color: #006980;
-			}
-		}
-	
-		.right {
-			.cirkler {
-				width: 7px;
-				height: 7px;
-				border-radius: 50%;
-				background-color: white;
-				display: inline-block;
-				vertical-align: 2px;
-				margin-left: 20px;
-				margin-right: 5px;
-			}
-			.haha {
-				margin-bottom: 20px;
-				font-size: 20px;
-				font-weight: bold;
-			}
-			.title, .content {
-				font-size: 16px;
-				font-weight: normal;
-			}
-
-			.content {
-				display: inline-block;
-				
-			}
-		}
 	}
 
 	#fooder {
@@ -1374,20 +1336,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
    }
 
    	#terms-of-service {
-		.waper {
-			display: block;
-			.left {
-				display: flex;
-				width: 100%;
-				justify-content: space-between;
-			}
-
-			.right {
-				padding: 10px;
-				width: 100%;
-			}
-		}
-
 		.fooder {
 			height: auto;
 		}
