@@ -4,7 +4,6 @@ import EcoSystemController from './controllers/EcoSystemController';
 import FeatureController from './controllers/FeatureController';
 import AboutController from './controllers/AboutController';
 import RoadmapController from './controllers/RoadmapController';
-import OurTeamController from './controllers/OurTeamController';
 import AdviserController from './controllers/AdviserController';
 import FooderController from './controllers/FooderController';
 import FaqController from './controllers/FaqController';
@@ -68,7 +67,6 @@ class App extends React.Component {
 
         if (destination.index === 4) {
             color = '#D0C941';
-
         }
 
         if (destination.index === 5) {
@@ -119,14 +117,14 @@ class App extends React.Component {
                                 <div className="section">
                                     <RoadmapController isActive={this.state.index === 5} />
                                 </div>
-                                <div className="section">
+                                {/* <div className="section">
                                     <OurTeamController isActive={this.state.index === 6} />
+                                </div> */}
+                                <div className="section">
+                                    <AdviserController isActive={this.state.index === 6} />
                                 </div>
                                 <div className="section">
-                                    <AdviserController isActive={this.state.index === 7} />
-                                </div>
-                                <div className="section">
-                                    <FooderController isActive={this.state.index === 8} />
+                                    <FooderController isActive={this.state.index === 7} />
                                 </div>
                             </ReactFullpage.Wrapper>
 

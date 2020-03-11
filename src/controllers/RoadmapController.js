@@ -41,7 +41,7 @@ class RoadmapController extends Component {
                         type: 'down'
                     },
                     q4: {
-                        value: 'Launching Blockchain Empow mainnet and launching Empo social network',
+                        value: 'Launching Blockchain Empow mainnet and launching Empow.io social network',
                         type: 'up'
                     }
                 },
@@ -219,49 +219,6 @@ class RoadmapController extends Component {
                                 }
                             </div>
                         )
-
-                        // for(let i = 1; i <= 4; i++) {
-                        //     if(data[key].)
-                        // }
-
-                        // return (
-                        // <div className="one-quarter">
-                        //     <div className="line"></div>
-                        //     <div className="circle"></div>
-                        //     <p>Q1 - 2017</p>
-                        //     <div style={{ clear: 'both' }}></div>
-                        // </div>
-                        // )
-
-                        // <div className="one-year">
-                        //     <div className="one-quarter">
-                        //         <div className="line"></div>
-                        //         <div className="circle"></div>
-                        //         <p>Q1 - 2017</p>
-                        //         <div style={{ clear: 'both' }}></div>
-                        //     </div>
-
-                        //     <div className="one-quarter">
-                        //         <div className="line"></div>
-                        //         <div className="circle"></div>
-                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                        //         <div style={{ clear: 'both' }}></div>
-                        //     </div>
-
-                        //     <div className="one-quarter">
-                        //         <div className="line"></div>
-                        //         <div className="circle"></div>
-                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                        //         <div style={{ clear: 'both' }}></div>
-                        //     </div>
-
-                        //     <div className="one-quarter">
-                        //         <div className="line"></div>
-                        //         <div className="circle"></div>
-                        //         <p>Kiểm tra nền tảng, phát hành ví Empow wallet.  Phát hành EmScan.Chính thức phát hành nền tảng thanh toán Empay. Phân phối Token Empow, đồng thời liệt kê trên sàn giao dịch. </p>
-                        //         <div style={{ clear: 'both' }}></div>
-                        //     </div>
-                        // </div>
                     })}
 
                 </div>

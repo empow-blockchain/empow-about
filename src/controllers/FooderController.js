@@ -5,7 +5,6 @@ import LogoFacebook from '../assets/images/logo-facebook.svg'
 import LogoTwitter from '../assets/images/logo-twitter.svg'
 import LogoTelegram from '../assets/images/logo-telegram.svg'
 import Linkedin from '../assets/images/linkedin-logo.svg'
-import LogoBitcoinTalk from '../assets/images/logo-bitcointalk.svg'
 import LogoGithub from '../assets/images/logo-github.svg'
 
 class FooderController extends Component {
@@ -22,7 +21,7 @@ class FooderController extends Component {
                                 <a className="logo" href="https://www.facebook.com/pg/Empowofficial" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoFacebook} alt="photos"></img>
                                 </a>
-                                <a className="logo" href="https://twitter.com/Empowofficial" target="_blank" rel="noopener noreferrer">
+                                <a className="logo" href="https://twitter.com/EmpowNetwork" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoTwitter} alt="photos"></img>
                                 </a>
                                 <a className="logo" href="http://linkedin.com/company/empow-io" target="_blank" rel="noopener noreferrer">
@@ -33,9 +32,6 @@ class FooderController extends Component {
                                 </a>
                                 <a className="logo" href="https://medium.com/@business_44456" target="_blank" rel="noopener noreferrer">
                                     <p>M</p>
-                                </a>
-                                <a className="logo" href="https://bitcointalk.org/index.php?topic=5180095.msg52308339#msg52308339" target="_blank" rel="noopener noreferrer">
-                                    <img style={{ width: '12px', height: '12px' }} src={LogoBitcoinTalk} alt="photos"></img>
                                 </a>
                                 <a className="logo" href="https://github.com/empow-blockchain?tab=repositories" target="_blank" rel="noopener noreferrer">
                                     <img style={{ width: '12px', height: '12px' }} src={LogoGithub} alt="photos"></img>

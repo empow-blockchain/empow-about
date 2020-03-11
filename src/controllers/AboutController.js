@@ -64,7 +64,7 @@ class AboutController extends Component {
                 <img className="img10" style={{ top: '-30px', left: '50px' }} src={IconProject} alt="photos"></img>
                 <img className="img11" style={{ top: '20px', left: '20px' }} src={IconHeadphone} alt="photos"></img>
                 <img className="img12" style={{ top: '40px', left: '40px' }} src={IconPresent} alt="photos"></img>
-                <p className="title">EMPO</p>
+                <p className="title">EMPOW</p>
                 <img className="img13" style={{ top: '-155px', left: '60px' }} src={IconData} alt="photos"></img>
                 <img className="img14" style={{ top: '-140px', left: '85px' }} src={IconProject} alt="photos"></img>
                 <img className="img15" style={{ top: '-40px', left: '-5px' }} src={IconBlockchain} alt="photos"></img>
@@ -87,13 +87,13 @@ class AboutController extends Component {
         return (
             <div id="about">
                 <div className="container">
-                    { this.props.isMobile && <p className="title">Mạng xã hội Empow</p>} 
+                    { this.props.isMobile && <p className="title">Empow.io Social Network</p>} 
                     <div className="wrapper">
                         <div className="waper-logo">
                             {!this.props.isMobile ? this.renderPc() : this.renderMobile()}
                         </div>
-                        <p className="content">Empo is a social network built on Empow's Blockchain</p>
-                        <p className="text">Empo will bring users a smooth experience like other social networks. With Empow, users can share information, photos, connect with friends, discuss, chat and interact with each other. Users are free to create content on Empo and will receive profits from advertising and bonuses from the system. Empo will bring safe and breakthrough experiences of social networking.
+                        <p className="content">Empow.io is a social network built on Empow's Blockchain</p>
+                        <p className="text">Empow.io will bring users a smooth experience like other social networks. With Empow, users can share information, photos, connect with friends, discuss, chat and interact with each other. Users are free to create content on Empow.io and will receive profits from advertising and bonuses from the system. Empow.io will bring safe and breakthrough experiences of social networking.
 </p>
                     </div>
                 </div>

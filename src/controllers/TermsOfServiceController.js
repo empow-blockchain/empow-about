@@ -20,7 +20,7 @@ class TermsOfServiceController extends Component {
                 },
                 {
                     title: '3.	Services Offered & Provided',
-                    content: `Services Empow team offers & provides:\n- Create & interact with contents, interact with & connect with other users to receive EM tokens on EmPo social network ;\n- Building safe, high-performance platforms on Empow Blockchain ;\n- Register and use Empow Wallet ; \n- Explore & search for all Dapps information on EmScan ;\n- Digital payment on Empay platform ;\n- Ads auction on EmAds service.`
+                    content: `Services Empow team offers & provides:\n- Create & interact with contents, interact with & connect with other users to receive EM tokens on Empow.io social network ;\n- Building safe, high-performance platforms on Empow Blockchain ;\n- Register and use Empow Wallet ; \n- Explore & search for all Dapps information on EmScan ;\n- Digital payment on Empay platform ;\n- Ads auction on EmAds service.`
                 },
                 {
                     title: '4.	Account Registration',

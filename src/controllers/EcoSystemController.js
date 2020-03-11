@@ -33,12 +33,12 @@ class EcoSystemController extends Component {
             {
                 title: 'EmAds',
                 image: EmAds,
-                description: "An online and multimedia advertising auction platform built on the EmPo social network. An EmAds' decentralized technology platform allows all participants to benefit from the money currently being wasted on intermediaries.."
+                description: "An online and multimedia advertising auction platform built on the Empow.io social network. An EmAds' decentralized technology platform allows all participants to benefit from the money currently being wasted on intermediaries.."
             },
             {
-                title: 'EmPo',
+                title: 'Empow.io',
                 image: EmWorld,
-                description: 'A decentralized social network built on Blockchain Empow platform, helping users to share information, photos, connect with friends, discuss, chat and interact with each other. Users can access Empo around the world safely, securely and have full control over the account. With Empo, users can freely create content to receive EM tokens.'
+                description: 'A decentralized social network built on Blockchain Empow platform, helping users to share information, photos, connect with friends, discuss, chat and interact with each other. Users can access Empow.io around the world safely, securely and have full control over the account. With Empow.io, users can freely create content to receive EM tokens.'
             },
             {
                 title: 'EmPay',

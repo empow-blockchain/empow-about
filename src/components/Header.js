@@ -6,7 +6,6 @@ import $ from 'jquery'
 import LogoTelegram from '../assets/images/logo-telegram.svg'
 import LogoTwitter from '../assets/images/logo-twitter.svg'
 import LogoFacebook from '../assets/images/logo-facebook.svg'
-import LogoBitcoinTalk from '../assets/images/logo-bitcointalk.svg'
 import LogoGithub from '../assets/images/logo-github.svg'
 import Linkedin from '../assets/images/linkedin-logo.svg'
 
@@ -63,7 +62,7 @@ class Header extends Component {
                 <a href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">
                     <img src={LogoTelegram} alt="photos"></img>
                 </a>
-                <a href="https://twitter.com/Empowofficial" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/EmpowNetwork" target="_blank" rel="noopener noreferrer">
                     <img src={LogoTwitter} alt="photos"></img>
                 </a>
                 <a href="https://www.facebook.com/pg/Empowofficial" target="_blank" rel="noopener noreferrer">
@@ -74,9 +73,6 @@ class Header extends Component {
                 </a>
                 <a href="https://medium.com/@business_44456" target="_blank" rel="noopener noreferrer">
                     <span>M</span>
-                </a>
-                <a href="https://bitcointalk.org/index.php?topic=5180095.msg52308339#msg52308339" target="_blank" rel="noopener noreferrer">
-                    <img style={{ width: '12px', height: '12px' }} src={LogoBitcoinTalk} alt="photos"></img>
                 </a>
                 <a href="https://github.com/empow-blockchain?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <img style={{ width: '12px', height: '12px' }} src={LogoGithub} alt="photos"></img>
@@ -94,7 +90,7 @@ class Header extends Component {
                 <div className="container">
                     <img src={toggleMenu ? IconClose : IconMobile} className="icon-mobile" alt="photos" onClick={() => this.setState({ toggleMenu: !toggleMenu })}></img>
                     {toggleMenu && <div className="ovelay-mobile"></div>}
-                    <a className="waper-logo" href='/'>
+                    <a className="waper-logo" href='https://empow.io'>
                         <svg style={{ fill: this.props.color === '#46A228' ? '#46A228' : 'white' }} xmlns="http://www.w3.org/2000/svg" width="38.438" height="30.796" viewBox="0 0 38.438 30.796">
                             <g id="Group_406" data-name="Group 406" transform="translate(4358.138 4353.339)">
                                 <path id="Path_1588" data-name="Path 1588" className="cls-1" d="M225.508,152.013l9.228,15.3-1.71-.01L235,170.591l6-.014-15.248-25.318c-.3.479-20.766,30.762-20.766,30.762l33.29.034L224.64,153.3C225.014,152.73,225.548,151.915,225.508,152.013Zm-13.619,20.2s6.565-9.7,10.569-15.676l9.391,15.593Z" transform="translate(-4560.693 -4498.598)" />
@@ -116,13 +112,13 @@ class Header extends Component {
                         <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
                             href='/roadmap'>Roadmap</a>
-                        {!this.props.isMobile && <a onMouseOver={(e) => this.onMouseOver(e)}
+                        {/* {!this.props.isMobile && <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
-                            href='/ourteam'>Our Team</a>}
+                            href='/ourteam'>Our Team</a>} */}
                         <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
                             href='/faq'
-                            target='_blank'>DApps</a>
+                            target='_blank'>FAQ</a>
 
 
                     </ul>
