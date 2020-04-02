@@ -111,6 +111,9 @@ class Header extends Component {
                             href="/WHITEPAPER.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
                         <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
+                            href="https://docs.google.com/document/d/1S3aUgQfzAJrCCMhuUcHt_jL9osfO6JWWjhBnpHqVv6A" target="_blank" rel="noopener noreferrer">Technical Paper</a>
+                        <a onMouseOver={(e) => this.onMouseOver(e)}
+                            onMouseOut={(e) => this.onMouseOut(e)}
                             href='/roadmap'>Roadmap</a>
                         {/* {!this.props.isMobile && <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
