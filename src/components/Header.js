@@ -106,9 +106,9 @@ class Header extends Component {
                         <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
                             href="https://chrome.google.com/webstore/detail/empow-wallet/nlgnepoeokdfodgjkjiblkadkjbdfmgd" target="_blank" rel="noopener noreferrer">Empow Wallet</a>
-                        <a onMouseOver={(e) => this.onMouseOver(e)}
+                        {/* <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
-                            href="/WHITEPAPER.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+                            href="/WHITEPAPER.pdf" target="_blank" rel="noopener noreferrer">Whitepaper</a> */}
                         <a onMouseOver={(e) => this.onMouseOver(e)}
                             onMouseOut={(e) => this.onMouseOut(e)}
                             href="https://docs.google.com/document/d/1S3aUgQfzAJrCCMhuUcHt_jL9osfO6JWWjhBnpHqVv6A" target="_blank" rel="noopener noreferrer">Technical Paper</a>
