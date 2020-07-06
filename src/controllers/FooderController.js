@@ -27,7 +27,7 @@ class FooderController extends Component {
                                 <a className="logo" href="http://linkedin.com/company/empow-io" target="_blank" rel="noopener noreferrer">
                                     <img style={{ width: '12px', height: '12px' }} src={Linkedin} alt="photos"></img>
                                 </a>
-                                <a className="logo" href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">
+                                <a className="logo" href="https://t.me/heaven_book" target="_blank" rel="noopener noreferrer">
                                     <img src={LogoTelegram} alt="photos"></img>
                                 </a>
                                 <a className="logo" href="https://medium.com/@business_44456" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ class FooderController extends Component {
                             <p>News</p>
                             <p>Privacy Policy</p>
                             <p>Terms of Service</p>
-                            <a href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">Help & Support</a>
+                            <a href="https://t.me/heaven_book" target="_blank" rel="noopener noreferrer">Help & Support</a>
                         </div>
                         <div className="group">
                             <p className="title">Resource</p>
@@ -59,7 +59,7 @@ class FooderController extends Component {
                             </div>
                             <div className="child">
                                 <img src={Location} alt="photos"></img>
-                                <a href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                                <a href="https://t.me/heaven_book" target="_blank" rel="noopener noreferrer">Contact Us</a>
                             </div>
                         </div>
                     </div>

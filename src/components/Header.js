@@ -59,7 +59,7 @@ class Header extends Component {
     renderContact() {
         return (
             <div className="contact">
-                <a href="https://t.me/empowofficial" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/heaven_book" target="_blank" rel="noopener noreferrer">
                     <img src={LogoTelegram} alt="photos"></img>
                 </a>
                 <a href="https://twitter.com/EmpowNetwork" target="_blank" rel="noopener noreferrer">
