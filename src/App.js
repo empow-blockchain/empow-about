@@ -7,6 +7,7 @@ import RoadmapController from './controllers/RoadmapController';
 import AdviserController from './controllers/AdviserController';
 import FooderController from './controllers/FooderController';
 import FaqController from './controllers/FaqController';
+import OurTeamController from './controllers/OurTeamController';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import './assets/scss/style.scss';
@@ -117,9 +118,9 @@ class App extends React.Component {
                                 <div className="section">
                                     <RoadmapController isActive={this.state.index === 5} />
                                 </div>
-                                {/* <div className="section">
+                                <div className="section">
                                     <OurTeamController isActive={this.state.index === 6} />
-                                </div> */}
+                                </div>
                                 <div className="section">
                                     <AdviserController isActive={this.state.index === 6} />
                                 </div>
