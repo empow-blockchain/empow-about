@@ -122,10 +122,10 @@ class App extends React.Component {
                                     <OurTeamController isActive={this.state.index === 6} />
                                 </div>
                                 <div className="section">
-                                    <AdviserController isActive={this.state.index === 6} />
+                                    <AdviserController isActive={this.state.index === 7} />
                                 </div>
                                 <div className="section">
-                                    <FooderController isActive={this.state.index === 7} />
+                                    <FooderController isActive={this.state.index === 8} />
                                 </div>
                             </ReactFullpage.Wrapper>
 
