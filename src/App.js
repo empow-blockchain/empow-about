@@ -74,11 +74,11 @@ class App extends React.Component {
             color = '#6F1EB1';
         }
 
-        if (destination.index === 6) {
-            color = '#FF7E0E';
-        }
+        // if (destination.index === 6) {
+        //     color = '#FF7E0E';
+        // }
 
-        if (destination.index === 7) {
+        if (destination.index === 6) {
             color = '#007791';
         }
 
@@ -122,10 +122,10 @@ class App extends React.Component {
                                     <OurTeamController isActive={this.state.index === 6} />
                                 </div> */}
                                 <div className="section">
-                                    <AdviserController isActive={this.state.index === 7} />
+                                    <AdviserController isActive={this.state.index === 6} />
                                 </div>
                                 <div className="section">
-                                    <FooderController isActive={this.state.index === 8} />
+                                    <FooderController isActive={this.state.index === 7} />
                                 </div>
                             </ReactFullpage.Wrapper>
 
@@ -153,9 +153,9 @@ class App extends React.Component {
             return this.renderHomePage(5)
         }
 
-        if (this.state.currentIndex === 6) {
-            return this.renderHomePage(6)
-        }
+        // if (this.state.currentIndex === 6) {
+        //     return this.renderHomePage(6)
+        // }
         return this.renderHomePage()
     }
 
