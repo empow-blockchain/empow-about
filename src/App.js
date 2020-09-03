@@ -42,11 +42,11 @@ class App extends React.Component {
             })
         }
 
-        if (this.state.pathname === '/ourteam') {
-            this.setState({
-                currentIndex: 6
-            })
-        }
+        // if (this.state.pathname === '/ourteam') {
+        //     this.setState({
+        //         currentIndex: 6
+        //     })
+        // }
     }
 
     onScroll = (destination) => {
@@ -118,9 +118,9 @@ class App extends React.Component {
                                 <div className="section">
                                     <RoadmapController isActive={this.state.index === 5} />
                                 </div>
-                                <div className="section">
+                                {/* <div className="section">
                                     <OurTeamController isActive={this.state.index === 6} />
-                                </div>
+                                </div> */}
                                 <div className="section">
                                     <AdviserController isActive={this.state.index === 7} />
                                 </div>
